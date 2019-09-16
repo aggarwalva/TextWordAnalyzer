@@ -1,88 +1,131 @@
-i : 16
-remember : 9
-the : 6
-a : 5
-my : 4
-was : 4
-it : 4
-of : 3
-to : 3
-and : 2
-how : 2
-that : 2
-as : 2
-on : 2
-over : 2
-so : 2
-go : 2
-daydreams : 1
-dying : 1
-unhappy : 1
-everybody : 1
-would : 1
-be : 1
-only : 1
-time : 1
-ever : 1
-saw : 1
-mother : 1
-cry : 1
-eating : 1
-apricot : 1
-pie : 1
-life : 1
-just : 1
-serious : 1
-then : 1
-is : 1
-now : 1
-sound : 1
-ice : 1
-cream : 1
-man : 1
-coming : 1
-once : 1
-losing : 1
-nickel : 1
-in : 1
-grass : 1
-before : 1
-he : 1
-made : 1
-house : 1
-ringworms : 1
-name : 1
-tags : 1
-first : 1
-erection : 1
-distinctly : 1
-having : 1
-by : 1
-side : 1
-public : 1
-swimming : 1
-pool : 1
-sunning : 1
-back : 1
-towel : 1
-didnt : 1
-know : 1
-what : 1
-do : 1
-except : 1
-turn : 1
-turned : 1
-but : 1
-wouldnt : 1
-away : 1
-got : 1
-terrible : 1
-sunburn : 1
-bad : 1
-had : 1
-see : 1
-doctor : 1
-much : 1
-wearing : 1
-shirt : 1
-hurt : 1
+ i remember : 8
+ remember the : 3
+ i was : 2
+ remember daydreams : 1
+ daydreams of : 1
+ of dying : 1
+ dying and : 1
+ and how : 1
+ how unhappy : 1
+ unhappy everybody : 1
+ everybody would : 1
+ would be : 1
+ be : 1
+ the only : 1
+ only time : 1
+ time i : 1
+ i ever : 1
+ ever saw : 1
+ saw my : 1
+ my mother : 1
+ mother cry : 1
+ cry i : 1
+ was eating : 1
+ eating apricot : 1
+ apricot pie : 1
+ pie : 1
+ remember that : 1
+ that life : 1
+ life was : 1
+ was just : 1
+ just as : 1
+ as serious : 1
+ serious then : 1
+ then as : 1
+ as it : 1
+ it is : 1
+ is now : 1
+ now : 1
+ the sound : 1
+ sound of : 1
+ of the : 1
+ the ice : 1
+ ice cream : 1
+ cream man : 1
+ man coming : 1
+ coming : 1
+ remember once : 1
+ once losing : 1
+ losing my : 1
+ my nickel : 1
+ nickel in : 1
+ in the : 1
+ the grass : 1
+ grass before : 1
+ before he : 1
+ he made : 1
+ made it : 1
+ it to : 1
+ to my : 1
+ my house : 1
+ house : 1
+ remember ringworms : 1
+ ringworms and : 1
+ and name : 1
+ name tags : 1
+ tags : 1
+ the first : 1
+ first erection : 1
+ erection i : 1
+ i distinctly : 1
+ distinctly remember : 1
+ remember having : 1
+ having it : 1
+ it was : 1
+ was by : 1
+ by the : 1
+ the side : 1
+ side of : 1
+ of a : 1
+ a public : 1
+ public swimming : 1
+ swimming pool : 1
+ pool i : 1
+ was sunning : 1
+ sunning on : 1
+ on my : 1
+ my back : 1
+ back on : 1
+ on a : 1
+ a towel : 1
+ towel i : 1
+ i didnt : 1
+ didnt know : 1
+ know what : 1
+ what to : 1
+ to do : 1
+ do except : 1
+ except turn : 1
+ turn over : 1
+ over so : 1
+ so i : 1
+ i turned : 1
+ turned over : 1
+ over but : 1
+ but it : 1
+ it wouldnt : 1
+ wouldnt go : 1
+ go away : 1
+ away i : 1
+ i got : 1
+ got a : 1
+ a terrible : 1
+ terrible sunburn : 1
+ sunburn so : 1
+ so bad : 1
+ bad that : 1
+ that i : 1
+ i had : 1
+ had to : 1
+ to go : 1
+ go see : 1
+ see a : 1
+ a doctor : 1
+ doctor i : 1
+ remember how : 1
+ how much : 1
+ much wearing : 1
+ wearing a : 1
+ a shirt : 1
+ shirt hurt : 1
+ hurt : 1

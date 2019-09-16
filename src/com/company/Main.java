@@ -10,7 +10,7 @@ public class Main {
         String output = "output.txt";
         TextReader reader = new TextReader(path);
         TextWriter writer = new TextWriter(output);
-        ArrayList<RepeatWord> list = reader.repeatWordAnalysis();
+        ArrayList<RepeatWord> list = reader.repeatPhraseAnalysis(2);
         for(RepeatWord word : list){
             System.out.println(word);
         }

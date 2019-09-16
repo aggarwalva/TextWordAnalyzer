@@ -36,19 +36,23 @@ public class TextReader {
         initializeReader();
         ArrayList<RepeatWord> out = new ArrayList<>();
         while(s.hasNext()){
-            try{
+            String current = s.nextLine().replaceAll("[^a-zA-Z ]", "");
+            String[] wordArray = current.split(" ");
+            for(int i = 0; i < wordArray.length; i++){
                 String phrase = "";
-                for(int i = 0; i < phraseLength; i++){
-                    phrase = phrase + s.next();
+                for(int j = 0; j < phraseLength; j++){
+                    try{
+                        phrase = phrase + " " + wordArray[i+j];
+                    } catch (ArrayIndexOutOfBoundsException e){
+                        //Log
+                    }
                 }
-                RepeatWord temp = new RepeatWord(s.next());
+                RepeatWord temp = new RepeatWord(phrase);
                 if(out.contains(temp)){
                     out.get(out.indexOf(temp)).repeat();
                 } else{
                     out.add(temp);
                 }
-            } catch(ArrayIndexOutOfBoundsException e){
-                //Log
             }
         }
         out.sort((o1, o2) -> o2.repeats - o1.repeats);
