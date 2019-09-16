@@ -17,7 +17,6 @@ public class TextWriter {
             fileOut = new FileWriter(output);
             write = new BufferedWriter(fileOut);
 
-
         } catch (IOException e){
             e.printStackTrace();
         }
