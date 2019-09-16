@@ -5,7 +5,7 @@ public class RepeatWord {
     int repeats;
 
     public RepeatWord(String word){
-        this.word = word;
+        this.word = fixString(word);
         this.repeats = 1;
     }
 
@@ -32,6 +32,12 @@ public class RepeatWord {
 
     public int getRepeats(){
         return repeats;
+    }
+
+    public String fixString(String in){
+        String out = in.toLowerCase();
+        out = out.replaceAll("[^a-zA-Z ]", "");
+        return out;
     }
 
     @Override

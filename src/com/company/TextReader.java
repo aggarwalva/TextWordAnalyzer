@@ -15,27 +15,22 @@ public class TextReader {
     BufferedReader in = null;
     Scanner s = null;
 
-    public TextReader(File raw){
-        this.raw = raw;
+    public TextReader(String path){
+        this.raw = new File(path);
     }
 
     public ArrayList<RepeatWord> repeatWordAnalysis(){
         initializeReader();
         ArrayList<RepeatWord> out = new ArrayList<>();
         while(s.hasNext()){
-            RepeatWord temp = new RepeatWord(s.next().toLowerCase());
+            RepeatWord temp = new RepeatWord(s.next());
             if(out.contains(temp)){
                 out.get(out.indexOf(temp)).repeat();
             } else{
                 out.add(temp);
             }
         }
-        out.sort(new Comparator<RepeatWord>() {
-            @Override
-            public int compare(RepeatWord o1, RepeatWord o2) {
-                return o2.repeats - o1.repeats;
-            }
-        });
+        out.sort((o1, o2) -> o2.repeats - o1.repeats);
         return out;
     }
 

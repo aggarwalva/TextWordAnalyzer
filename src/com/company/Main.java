@@ -7,12 +7,13 @@ public class Main {
 
     public static void main(String[] args) {
         String path = "test.txt";
-        TextReader reader = new TextReader(new File(path));
-        reader.printFile();
-        ArrayList<RepeatWord> list = new ArrayList<>();
-        list = reader.repeatWordAnalysis();
+        String output = "output.txt";
+        TextReader reader = new TextReader(path);
+        TextWriter writer = new TextWriter(output);
+        ArrayList<RepeatWord> list = reader.repeatWordAnalysis();
         for(RepeatWord word : list){
             System.out.println(word);
         }
+        writer.writeWordArray(list);
     }
 }
