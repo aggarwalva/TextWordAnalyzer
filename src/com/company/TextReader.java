@@ -13,18 +13,18 @@ public class TextReader {
     BufferedReader in = null;
     Scanner s = null;
 
-    public TextReader(String path){
+    public TextReader(String path) {
         this.raw = new File(path);
     }
 
-    public ArrayList<RepeatWord> repeatWordAnalysis(){
+    public ArrayList<RepeatWord> repeatWordAnalysis() {
         initializeReader();
         ArrayList<RepeatWord> out = new ArrayList<>();
-        while(s.hasNext()){
+        while (s.hasNext()) {
             RepeatWord temp = new RepeatWord(s.next());
-            if(out.contains(temp)){
+            if (out.contains(temp)) {
                 out.get(out.indexOf(temp)).repeat();
-            } else{
+            } else {
                 out.add(temp);
             }
         }
@@ -32,25 +32,25 @@ public class TextReader {
         return out;
     }
 
-    public ArrayList<RepeatWord> repeatPhraseAnalysis(int phraseLength){
+    public ArrayList<RepeatWord> repeatPhraseAnalysis(int phraseLength) {
         initializeReader();
         ArrayList<RepeatWord> out = new ArrayList<>();
-        while(s.hasNext()){
+        while (s.hasNext()) {
             String current = s.nextLine().replaceAll("[^a-zA-Z ]", "");
             String[] wordArray = current.split(" ");
-            for(int i = 0; i < wordArray.length; i++){
+            for (int i = 0; i < wordArray.length; i++) {
                 String phrase = "";
-                for(int j = 0; j < phraseLength; j++){
-                    try{
-                        phrase = phrase + " " + wordArray[i+j];
-                    } catch (ArrayIndexOutOfBoundsException e){
+                for (int j = 0; j < phraseLength; j++) {
+                    try {
+                        phrase = phrase + " " + wordArray[i + j];
+                    } catch (ArrayIndexOutOfBoundsException e) {
                         //Log
                     }
                 }
                 RepeatWord temp = new RepeatWord(phrase);
-                if(out.contains(temp)){
+                if (out.contains(temp)) {
                     out.get(out.indexOf(temp)).repeat();
-                } else{
+                } else {
                     out.add(temp);
                 }
             }
@@ -59,8 +59,8 @@ public class TextReader {
         return out;
     }
 
-    public void initializeReader(){
-        try{
+    public void initializeReader() {
+        try {
             rawIn = new FileReader(raw);
             s = new Scanner(rawIn);
         } catch (FileNotFoundException e) {
@@ -68,9 +68,9 @@ public class TextReader {
         }
     }
 
-    public void printFile(){
+    public void printFile() {
         initializeReader();
-        while(s.hasNext()){
+        while (s.hasNext()) {
             System.out.println(s.next());
         }
     }
